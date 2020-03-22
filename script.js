@@ -1,3 +1,6 @@
+const width=224, height=224;
+const MODEL_URL = 'web_model_2/model.json';
+
 const inputDiv = document.getElementById('input-div');
 const resultDiv = document.getElementById('result-div');
 const video = document.getElementById('video-input');
@@ -32,7 +35,6 @@ btnRetry.addEventListener("click", function() {
 });
 
 // Load the model
-const MODEL_URL = 'web_model/model.json';
 let model;
 tf.loadGraphModel(MODEL_URL).then(m => {
   btnAnalyze.disabled = false;
@@ -54,15 +56,12 @@ function onPhotoTaken(blob) {
   resultDiv.classList.remove('hidden');
   
   let aspectRatio = track.getSettings().aspectRatio;
-  let width = image.offsetWidth;
-  let height = Math.max(image.offsetWidth / aspectRatio, 224);
-  image.height = height;
+  image.height = Math.max(image.offsetWidth / aspectRatio, height);
   image.src = URL.createObjectURL(blob);
 
   predictMask();
 }
 
-const width=224, height=224;
 function predictMask() {
   // Preprocess the image from the webcam
   let rgb = tf.browser.fromPixels(video);
