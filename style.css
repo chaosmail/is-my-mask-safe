@@ -13,7 +13,7 @@ body {
 
 .card {
   text-align: center;
-  width: 28rem;
+  max-width: 28rem;
 }
 
 .hidden {
