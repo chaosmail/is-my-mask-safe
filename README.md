@@ -1,3 +1,5 @@
+![CI](https://github.com/chaosmail/is-my-mask-safe/workflows/CI/badge.svg)
+
 # Is my mask safe to use for COVID-19
 
 [Hackathon project](https://devpost.com/software/einfuhr-von-schutzmasken-und-selbst-schnelltest-verteilung) demo [#WirVsVirus](https://wirvsvirushackathon.devpost.com/) for identifying face mask and determining their quality using Machine Learning. This demo can run on any device with a browser and a webcam.
