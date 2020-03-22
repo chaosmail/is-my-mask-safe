@@ -1,0 +1,46 @@
+body {
+  background-color: #E8EAED;
+  color: #000;
+}
+
+#logo {
+  width: 4rem;
+}
+
+.container {
+  text-align: center;
+}
+
+.card {
+  text-align: center;
+  width: 28rem;
+}
+
+.hidden {
+  display: none;
+}
+
+#result-div .card-body {
+  text-align: start;
+}
+
+#result-div .card-body i {
+  width: 1.5rem;
+}
+
+a.success:hover {
+  color: #28a745!important;
+}
+
+a.danger:hover {
+  color: #dc3545!important;
+}
+
+.proba-label {
+    height: 1rem;
+}
+
+.proba-label > svg {
+    height: 100%;
+    display: block;
+}
