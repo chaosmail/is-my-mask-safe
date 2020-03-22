@@ -21,15 +21,17 @@
   <div class="container">
 
     <div class="intro mx-auto">
-      <h1>Is my mask safe safe to use for COVID-19?</h1>
-      <p>Many vendors sell fake or uncertified face masks. Analyze your face mask now to protect yourself.</p>
+      <h1>Is my respirator mask safe to use for COVID-19?</h1>
+      <p>
+        During the current COVID-19 pandemic, foreign distributes and manufactures of respirator mask sell fake, unsafe or uncertified masks all over the world. This application helps you to quickly analyze your face mask and to check if is a genuine safe product that will protect you from the corona virus.
+      </p>
     </div>
 
     <div id="input-div" class="card mx-auto shadow">
       <video autoplay="true" class="card-img-top" id="video-input"></video>
       <div class="card-body">
-        <h5 class="card-title">Check your face mask</h5>
-        <p class="card-text">Check if your face mask is safe by taking a picture and analysing it. This process will run completely in the browser and will not store your picture on our servers.</p>
+        <h5 class="card-title">Check your respirator mask</h5>
+        <p class="card-text">Take a picture of your mask to verify if it is safe to use during the COVID-19 pandemic. The analysis will run completely in the browser and will not store any pictures on our server.</p>
         <a href="#" id="analyze" class="btn btn-primary" disabled>Analyze!</a>
       </div>
     </div>
@@ -38,56 +40,53 @@
       <img class="card-img-top" id="img-result" width="200" height=""/>
       <div id="label-0" class="card-body label hidden">
         <h5 class="card-title">
-          Result: FFP2 mask
+          Looks like a <b>FFP2 mask</b>
           <div id="proba-0" class="proba-label float-right"></div>
         </h5>
         <p class="card-text">
           <i class="fas fa-check-circle text-success"></i> Your mask is safe and will protect you from infection. Please also verify the following criteria to verify that your mask is no counterfeit product. 
         </p>
         <p class="card-text">
-          <i class="far fa-check-circle"></i> Check the certificate
+          <i class="far fa-check-circle"></i> Must have a CE certification
         </p>
         <p class="card-text">
-          <i class="far fa-check-circle"></i> Must have 3 layers
+          <i class="far fa-check-circle"></i> Check if your retailer and manufacturer are trusted
         </p>
         <p class="card-text">
-          <i class="far fa-check-circle"></i> Only available from trusted manufactures. <a href="#">Learn more</a>
-        </p>
-        <p class="card-text">
-          <i class="fas fa-dollar-sign"></i> Costs between USD 3 - USD 5
+          <i class="fas fa-dollar-sign"></i> Costs between 10 and 30 dollars
         </p>
       </div>
       <div id="label-1" class="card-body label hidden">
         <h5 class="card-title">
-          Result: FFP3 mask
+          Looks like a <b>FFP3 mask</b>
           <div id="proba-1" class="proba-label float-right"></div>
         </h5>
         <p class="card-text">
           <i class="fas fa-check-circle text-success"></i> Your mask is safe and will protect you from infection. Please also verify the following criteria to verify that your mask is no counterfeit product. 
         </p>
         <p class="card-text">
-          <i class="far fa-check-circle"></i> Check the certificate
+          <i class="far fa-check-circle"></i> Must have a CE certification
         </p>
         <p class="card-text">
-          <i class="far fa-check-circle"></i> Must have 3 layers
+          <i class="far fa-check-circle"></i> Check if your retailer and manufacturer are trusted
         </p>
         <p class="card-text">
-          <i class="far fa-check-circle"></i> Only available from trusted manufactures. <a href="#">Learn more</a>
-        </p>
-        <p class="card-text">
-          <i class="fas fa-dollar-sign"></i> Costs between USD 3 - USD 5
+          <i class="fas fa-dollar-sign"></i> Costs between 10 and 50 dollars
         </p>
       </div>
       <div id="label-2" class="card-body label hidden">
         <h5 class="card-title">
-          Result: Unkown mask
+          Looks like this mask is not safe!
           <div id="proba-2" class="proba-label float-right"></div>
         </h5>
         <p class="card-text">
-          <i class="fas fa-exclamation-triangle text-danger"></i> We couldn't detect and verify your mask. Are you wearing one?
+          <i class="fas fa-exclamation-triangle text-danger"></i> We either couldn't detect your mask or verify that your mask fulfills the European FFP2 or FFP3 standard.
         </p>
         <p class="card-text">
-          <i class="far fa-check-circle"></i> Please make sure you are wearing a certified mask
+          <i class="fas fa-info-circle"></i> Please make sure your masks is at least a FFP2 mask!
+        </p>
+        <p class="card-text">
+          <i class="fas fa-info-circle"></i> Check the CE certificate on your mask!
         </p>
       </div>
       <div class="card-body">
@@ -97,10 +96,15 @@
         <a href="#" class="card-link float-right" title="Share!"><i class="fab fa-twitter"></i></a>  
       </div>
     </div>
+    <br>
+    <br>
+    <br>
+    <div class="outro mx-auto">
+      <p class="small">
+        Disclaimer: this is a demo application for health care professionals to detect different types of respirator masks developed during the <a href="https://wirvsvirushackathon.devpost.com/" target="_blank">#WirVsVirus</a> hackathon. Stay inside, wash your hands and stay safe!
+      </p>
+    </div>
   </div>
-  <br>
-  <br>
-  <br>
   <!-- Custom script -->
   <script type="text/javascript" src="script.js"></script>
   <!-- Font Awesome -->
