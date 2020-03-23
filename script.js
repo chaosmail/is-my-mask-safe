@@ -55,10 +55,9 @@ function onPhotoTaken(blob) {
   inputDiv.classList.add('hidden');
   resultDiv.classList.remove('hidden');
   
-  let aspectRatio = track.getSettings().aspectRatio;
+  let aspectRatio = track.getSettings().aspectRatio || 4/3;
   image.height = Math.max(image.offsetWidth / aspectRatio, height);
   image.src = URL.createObjectURL(blob);
-
   predictMask();
 }
 
